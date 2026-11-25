@@ -13,7 +13,7 @@
 
 [sub_resource type="Animation" id="Animation_c8bqh"]
 resource_name = "Idle"
-length = 0.19999999999999998
+length = 0.2
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -69,7 +69,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_fkgr2"]
 resource_name = "WalkDown"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -97,7 +97,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_qg2eu"]
 resource_name = "WalkDownLeft"
-length = 0.19999999999999998
+length = 0.2
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -126,7 +126,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_lxmjj"]
 resource_name = "WalkDownRight"
-length = 0.19999999999999998
+length = 0.2
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -155,7 +155,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_uk32v"]
 resource_name = "WalkLeft"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -183,7 +183,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_uvrlg"]
 resource_name = "WalkRight"
-length = 0.19999999999999998
+length = 0.2
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -212,7 +212,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_otte4"]
 resource_name = "WalkUp"
-length = 0.19999999999999998
+length = 0.2
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -241,7 +241,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_oqds6"]
 resource_name = "WalkUpLeft"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -269,7 +269,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_xnxt3"]
 resource_name = "WalkUpRight"
-length = 0.19999999999999998
+length = 0.2
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -488,7 +488,7 @@ animations = [{
 radius = 4.0
 height = 8.0
 
-[node name="Node2D" type="Node2D" unique_id=1737794176]
+[node name="Players" type="Node2D" unique_id=1737794176]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2077094094]
 collision_mask = 255
@@ -502,6 +502,7 @@ libraries/ = SubResource("AnimationLibrary_fkgr2")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_1euqg")
 autoplay = "default"
+frame = 1
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=2100271145]
 zoom = Vector2(4, 4)
