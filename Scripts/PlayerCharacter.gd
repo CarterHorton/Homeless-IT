@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 @export var SPEED: float = 30.0
+@onready var sprite = $AnimatedSprite2D
+@onready var animator = $AnimationPlayer
 var InitialSpeed = SPEED
 
 func _physics_process(delta: float) -> void:
@@ -29,5 +31,50 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
+	spritePlayer(X_direction, Y_direction)
 	move_and_slide()
+
+func spritePlayer(x, y):
+	if !y:
+		y += 10
+	if x == 1:
+		y *= 5
+	if x == -1:
+		y *= 2
+	print(y)
+	if y == -1:
+		animator.play("WalkUp")
+	elif y == 1:
+		animator.play("WalkDown")
+	elif y == 50:
+		animator.play("WalkRight")
+	elif y == 20:
+		animator.play("WalkLeft")
+	elif y == -2:
+		animator.play("WalkUpLeft")
+	elif y == 2:
+		animator.play("WalkDownLeft")
+	elif y == -5:
+		animator.play("WalkUpRight")
+	elif y == 5:
+		animator.play("WalkDownRight")
+	else:
+		animator.play("Idle")
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
