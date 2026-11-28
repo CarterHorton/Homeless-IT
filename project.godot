@@ -24,6 +24,10 @@ window/stretch/aspect="expand"
 
 project/assembly_name="Homeless IT"
 
+[global_group]
+
+Player="A group for player characters"
+
 [input]
 
 Sprint={

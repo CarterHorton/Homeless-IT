@@ -42,7 +42,6 @@ func spritePlayer(x, y):
 		y *= 5
 	if x == -1:
 		y *= 2
-	print(y)
 	if y == -1:
 		animator.play("WalkUp")
 	elif y == 1:
